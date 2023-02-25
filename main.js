@@ -3,24 +3,33 @@ let box_2=document.querySelector('.box_2');
 
 let box=document.querySelector('.box');
 let res=document.querySelector('.res');
- let me_list=document.querySelector('.me_list');
+let me_list=document.querySelector('.me_list');
 
 let him=document.getElementById('him');
 let me=document.getElementById('me');
 let him_list=document.querySelector('.him_list');
 let total_1=document.querySelector('.total_1');
 let total_2=document.querySelector('.total_2');
+let back_2=document.getElementById('back_2');
+let new_game_1=document.getElementById('new_game_2');
+let box_4=document.querySelector('.box_4');
 
+
+let win=document.getElementById('win');
 
 
 let gear=document.getElementById('gear');
 let closee=document.getElementById('close');
-console.log(closee);
+
+
+
+
+
 
 
 
 gear.onclick=()=>{
-box.classList.add('show');
+box.classList.toggle('show');
 }
 closee.onclick=()=>{
     box.classList.remove('show');
@@ -55,9 +64,9 @@ res.onclick=(e)=>{
     me_data.push(+me_num);
     him_data.push(+him_num);
 
-    console.log(me_data);
     
-    console.log(him_data);
+    
+ي 
 
     add_number_me_to_page(me_data,him_data);
     update_total(total_1,total_2);
@@ -92,28 +101,67 @@ res.onclick=(e)=>{
      s_d+=him_data[el];
      
     }
-    //him_data_data.forEach(el=>{})
+    
     total_1.innerHTML=f_d;
     total_2.innerHTML=s_d;
    
     total_2.style.display='flex';
     
     total_1.style.display='flex';
-    if(f_d<50){
-      total_1.style.background='red';
-    }if(f_d>100){
-      total_1.style.background='forestgreen';
-    }else{
-      total_1.style.background='#fff';
+   
+
+    if(f_d>=152 &&f_d>s_d){
+      box_4.style.display='flex';
+      win.innerText='مبروك';
+    }if(s_d>=152&&s_d>f_d){
+      box_4.style.display='flex';
+      win.innerText=' لقد خسرت';
     }
-    switch(total_1.innerHTML){
-     
+    if(f_d>=152 &&s_d>=152&&f_d==s_d){
+      box_4.style.display='flex';
+      win.innerText='المشتري هو الفائز';
     }
-   }
- 
-  
 
     
+ 
+      
+   
+   }
+ 
+
+  
+  
+
+    function new_game(){
+      box.classList.remove('show');
+      box_4.style.display='none';
+     
+     me_data=[];
+     him_data=[];
+     add_number_me_to_page(me_data,him_data);
+     total_1.innerText='';
+     total_1.style.display='none';
+     total_2.innerText='';
+     total_2.style.display='none';
+     
+      
+    };
+
+
+    function back(){
+      
+      me_data.pop();
+      him_data.pop();
+      add_number_me_to_page(me_data,him_data);
+      update_total(total_1,total_2);
+      
+      if(total_1.innerText=='undefined'&&total_2.innerText=='undefined'){
+        total_1.style.display='none';
+        total_2.style.display='none';
+      }
+      box.classList.remove('show');
+      box_4.style.display='none';
+    }
   
     
 

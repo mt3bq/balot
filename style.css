@@ -72,6 +72,7 @@ button{
 .head{
     font-size: 25px;
     color: var(--font_color);
+    background-color:var(--secnt_color);
 }
 .box_1{
     background-color:var(--secnt_color);
@@ -81,6 +82,7 @@ button{
     align-items: center;
     row-gap: 8px;
     overflow: auto;
+    
     
 }
 .box_2{
@@ -119,20 +121,22 @@ i{
     position: absolute;
     top: 40%;
     left: 51%;
-    background-color: rgba(141, 40, 40, 0.589);
-    padding: 10px;
+    background-color: rgba(252, 252, 252, 0.589);
+    padding: 20px;
     border-radius: 10px;
     display: none;
+    font-size: 19px;
 }
 
 .total_2{
     position: absolute;
     top: 40%;
     right: 51%;
-    background-color: rgba(141, 40, 40, 0.589);
-    padding: 10px;
+    background-color: rgba(252, 252, 252, 0.589);
+    padding: 20px;
     border-radius: 10px;
     display: none;
+    font-size: 19px;
 }
 .show_1{
     display: flex;
@@ -143,24 +147,72 @@ i{
     right: 50%;
     top: 30%;
     transform: translate(50%,-50%);
-    background-color: rgb(163, 30, 30);
+    background-color: rgb(250, 242, 255);
     padding: 20px;
     z-index: 10000;
-    height: 100px;
+    height: 150px;
     display: none;
     justify-content: center;
     flex-direction: column;
     row-gap: 4px;
     border-radius: 7px;
 }
+
+.box button{
+    background-color: var(--first_color);
+    color: white;
+}
+
+.me_list li{
+
+    list-style: none;
+    font-size: 19px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+.him_list li{
+    list-style: none;
+    font-size: 19px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+
+.box_4{
+    width: 30%;
+    position: absolute;
+    right: 50%;
+    top: 30%;
+    transform: translate(50%,-50%);
+    background-color: rgb(250, 242, 255);
+    padding: 20px;
+    z-index: 10000;
+    height: 150px;
+    display: none;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 4px;
+    border-radius: 7px;
+}
+.box_4 button{
+    background-color: var(--first_color);
+    color: white;
+}
+.box_4 h3{
+    color: #131212;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 10px;
+}
 .box i{
     position: absolute;
     top: 5px;
     right: 5px;
+    color: #131212;
 }
 .show{
     display: flex;
 }
+
 
 
 
