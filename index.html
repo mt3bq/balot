@@ -9,7 +9,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <script src="./sweet.js"></script>
     <title>حاسبة بلوت</title>
-    
+    <style>
+        
+    </style>
 </head>
 <body>
 
@@ -46,13 +48,21 @@
                 <div class="head">
                     لنا
                 </div>
+
+                
                 <input type="text" id="me" required>
+
+                <div class="total_1"></div>
 
                 <ul class="me_list">
 
                 </ul>
 
-                <div class="total_1"></div>
+                <div class="new_game">
+                    <input type="button" value="لعبة جديده" onclick="new_game()">
+                </div>
+
+               
 
                 
             </div>
@@ -62,14 +72,24 @@
                 </div>
                 <input  type="text" id="him" required>
 
+                <div class="total_2"></div>
+
                 <ul class="him_list">
 
                 </ul>
 
-                <div class="total_2"></div>
+
+                <div class="back_tyle">
+                <input type="button" value="تراجع" onclick="back()">
+            </div>
+
+           
+
+
+                
                
             </div>
-            <i id="gear" class="fa-solid fa-gear"></i>
+            
         </div>
     </div>
 

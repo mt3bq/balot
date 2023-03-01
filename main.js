@@ -28,12 +28,7 @@ let closee=document.getElementById('close');
 
 
 
-gear.onclick=()=>{
-box.classList.toggle('show');
-}
-closee.onclick=()=>{
-    box.classList.remove('show');
-}
+
 
 let me_data=[];
 let him_data=[];
@@ -43,14 +38,25 @@ res.onclick=(e)=>{
 
   let viled=false;
   
-  if(me.value!=''&& him.value!=''){
-   add_number_me_to_arry(me.value,him.value);
-    //add_number_him_to_arry(him.value);  
+  if(me.value!='' || him.value!=''){
+ 
+
+ 
+    
+
+  
+
+    add_number_me_to_arry(me.value,him.value);
+   
     me.value="";
     him.value="";
-    
+  
+  
     viled=true;
+    
   }
+
+ 
  
   if(viled===false){
     e.preventDefault();
@@ -66,7 +72,6 @@ res.onclick=(e)=>{
 
     
     
-ي 
 
     add_number_me_to_page(me_data,him_data);
     update_total(total_1,total_2);
@@ -119,7 +124,7 @@ res.onclick=(e)=>{
     }
     if(f_d>=152 &&s_d>=152&&f_d==s_d){
       box_4.style.display='flex';
-      win.innerText='المشتري هو الفائز';
+      win.innerText='الشاري هو الفائز';
     }
 
     

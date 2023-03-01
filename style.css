@@ -53,21 +53,23 @@ font-family: system-ui, Tahoma, sans-serif
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 35px;
+    height: 40px;
     border-radius: 7px;
     cursor: pointer;
-    top: 22%;
+    top: 20%;
     z-index: 55;
+    width: 30%;
    
 }
-button{
+.res button{
     border: none;
     background-color: #fff;
     outline: none;
-    border-radius: 7px;
+    
     cursor: pointer;
     font-size: 16px;
     height: 33px;
+    
 }
 .head{
     font-size: 25px;
@@ -82,6 +84,7 @@ button{
     align-items: center;
     row-gap: 8px;
     overflow: auto;
+    position: relative;
     
     
 }
@@ -89,7 +92,7 @@ button{
     background-color:var(--secnt_color);
     border-radius: 6px;
     display: flex;
-    
+    position: relative;
     flex-direction: column;
     align-items: center;
     row-gap: 8px;
@@ -118,25 +121,29 @@ i{
     cursor: pointer;
 }
 .total_1{
-    position: absolute;
-    top: 40%;
-    left: 51%;
+    
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
     background-color: rgba(252, 252, 252, 0.589);
-    padding: 20px;
-    border-radius: 10px;
+    padding: 10px;
+    border-radius: 50%;
     display: none;
-    font-size: 19px;
+    font-size: 30px;
 }
 
 .total_2{
-    position: absolute;
-    top: 40%;
-    right: 51%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
     background-color: rgba(252, 252, 252, 0.589);
-    padding: 20px;
-    border-radius: 10px;
+    padding: 10px;
+    border-radius: 50%;
     display: none;
-    font-size: 19px;
+    font-size: 30px;
 }
 .show_1{
     display: flex;
@@ -166,7 +173,7 @@ i{
 .me_list li{
 
     list-style: none;
-    font-size: 19px;
+    font-size: 18px;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     color: white;
 }
@@ -196,6 +203,11 @@ i{
 .box_4 button{
     background-color: var(--first_color);
     color: white;
+    outline: none;
+    border-radius: 7px;
+    border: none;
+    height: 37px;
+    font-size: 18px;
 }
 .box_4 h3{
     color: #131212;
@@ -209,9 +221,67 @@ i{
     right: 5px;
     color: #131212;
 }
+.back_tyle{
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+}
+.back_tyle input{
+   
+    
+    width: 70%;
+    cursor: pointer;
+}
+.new_game{
+    position:absolute;
+    bottom: 10px;
+    width: 100%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    
+
+}
+.new_game input{
+    
+    cursor: pointer;
+    width: 70%;
+    
+
+}
 .show{
     display: flex;
 }
+
+
+
+
+@media(max-width:450px){
+    
+    .res{
+        top: 22%;
+        width: 23%;
+    }
+    .total_1{
+        font-size: 20px;
+    }
+    .total_2{
+        font-size: 20px;
+    }
+    .box_4 button{
+        background-color: var(--first_color);
+        color: white;
+        outline: none;
+        border-radius: 7px;
+        border: none;
+        height: 37px;
+        font-size: 15px;
+    }
+}
+
 
 
 
