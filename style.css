@@ -208,6 +208,7 @@ i{
     border: none;
     height: 37px;
     font-size: 18px;
+    cursor: pointer;
 }
 .box_4 h3{
     color: #131212;
@@ -279,6 +280,7 @@ i{
         border: none;
         height: 37px;
         font-size: 15px;
+        cursor: pointer;
     }
 }
 
